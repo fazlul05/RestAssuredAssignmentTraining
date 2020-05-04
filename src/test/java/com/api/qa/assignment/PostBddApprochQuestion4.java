@@ -40,6 +40,5 @@ public class PostBddApprochQuestion4 {
 				.then().log().all().assertThat().statusCode(201)
 				.and().body("SuccessCode", equalTo("OPERATION_SUCCESS"))
 				.and().body("Message", equalTo("Operation completed successfully"));
-
 	}
 }

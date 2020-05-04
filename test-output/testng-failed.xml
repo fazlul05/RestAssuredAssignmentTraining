@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.api.qa.assignment.PutQuestion6">
+      <class name="com.api.qa.assignment.GetBddApprochReqResQuestion9">
         <methods>
+          <include name="companyStatus"/>
           <include name="postData"/>
+          <include name="firstName"/>
         </methods>
-      </class> <!-- com.api.qa.assignment.PutQuestion6 -->
+      </class> <!-- com.api.qa.assignment.GetBddApprochReqResQuestion9 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -13,7 +13,7 @@ public class GetWeatherDetailsQuestion1 {
 
 	@Test (priority=1)
 	public void GetAPITest() {
-		given().log().all()
+		 given().log().all()
 		.when().log().all()
 		.get("http://restapi.demoqa.com/utilities/weather/city/Pune")
 		.then().log().all()
@@ -23,10 +23,10 @@ public class GetWeatherDetailsQuestion1 {
 	
 		@Test(priority=2)
 		public void GetAPITestNonBDD() {
+			given().log().all();
+
 			Response response=
-			given().log().all()
-			.when().log().all()
-			.get("http://restapi.demoqa.com/utilities/weather/city/Pune");
+			get("http://restapi.demoqa.com/utilities/weather/city/Pune");
 			
 			int statusCode= response.getStatusCode();
 			System.out.println(statusCode);
